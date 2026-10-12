@@ -1,8 +1,27 @@
-# VishaTech
+# VishvaTech
 
 ### Your Idea → Our Tech → Real Solution.
 
-A modern technology studio website built for **VishaTech** — focused on AI/ML, web development, data analytics, IoT, blockchain, software projects, and cloud deployment.
+VishvaTech helps students, individuals and small businesses turn technical ideas into working projects and digital solutions.
+
+## Local development
+
+```sh
+npm install
+npm run dev
+```
+
+## Production build
+
+```sh
+npm run build
+```
+
+---
+
+### Your Idea → Our Tech → Real Solution.
+
+A modern technology studio website built for **VishvaTech** — focused on AI/ML, web development, data analytics, IoT, blockchain, software projects, and cloud deployment.
 
 [![Live Website](https://img.shields.io/badge/Live%20Website-vishatech.vercel.app-2563EB?style=for-the-badge\&logo=vercel\&logoColor=white)](https://vishatech.vercel.app/)
 [![Built with React](https://img.shields.io/badge/React-TypeScript-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)](https://react.dev/)
@@ -13,7 +32,7 @@ A modern technology studio website built for **VishaTech** — focused on AI/ML,
 
 ## ✦ About
 
-**VishaTech** helps turn technical ideas into practical, working solutions.
+**VishvaTech** helps turn technical ideas into practical, working solutions.
 
 From a college project idea to a deployed AI application, dashboard, website, IoT system, or custom software — the goal is simple:
 
@@ -174,7 +193,7 @@ https://github.com/Tejeshyewale/vishatech-website
 
 Have a project idea?
 
-**WhatsApp:** +91 82375 74725
+**WhatsApp:** +91 86238 13105
 
 **Instagram:** [@vishva_the_creator](https://www.instagram.com/vishva_the_creator/)
 
@@ -226,7 +245,7 @@ Live deployment:
 
 <div align="center">
 
-### VishaTech
+### VishvaTech
 
 **Your Idea → Our Tech → Real Solution.**
 
