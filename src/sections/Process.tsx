@@ -3,11 +3,10 @@ import SectionHeading from "../components/SectionHeading";
 import Reveal from "../components/Reveal";
 
 const STEPS = [
-  { n: "01", title: "Idea", copy: "You share your idea — even if it's rough. We ask the right questions." },
-  { n: "02", title: "Requirements", copy: "We agree on scope, features and what 'done' looks like." },
-  { n: "03", title: "Development", copy: "We build it in parts and keep you posted along the way." },
-  { n: "04", title: "Testing", copy: "We check it works — and fix what doesn't before delivery." },
-  { n: "05", title: "Deployment", copy: "We help get it live, with a link you can actually share." },
+  { n: "01", title: "Discuss requirements", copy: "You tell us about your idea — even if it's rough. We ask the right questions to understand what you need." },
+  { n: "02", title: "Confirm scope & quotation", copy: "We agree on features, timeline and what 'done' looks like — then confirm a clear quotation before any work begins." },
+  { n: "03", title: "Develop & review", copy: "We build in parts, test as we go, and keep you posted so you can review progress along the way." },
+  { n: "04", title: "Deliver & hand over", copy: "We help get it live with a shareable link, explain how it works, and support small fixes after delivery." },
 ];
 
 export default function Process() {

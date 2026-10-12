@@ -31,7 +31,7 @@ const FAQS = [
   },
   {
     q: "How do I get started?",
-    a: "Tap “Start Your Project” — it opens WhatsApp with a pre-filled message. Tell us about your idea in a few lines and we'll take the conversation from there.",
+    a: "Tap “Discuss Your Project” — it opens WhatsApp with a pre-filled message. Tell us about your idea in a few lines and we'll take the conversation from there. You can also use the cost estimator or the enquiry form below.",
   },
 ];
 

@@ -106,10 +106,50 @@ function WebPreview() {
 }
 
 const PROJECTS = [
-  { cat: "AI / ML", title: "Prediction & ML models", points: ["Data cleaning & training", "Model building & tuning", "Simple demo you can present"], note: "Built for student / custom requirements", Visual: MlPreview },
-  { cat: "Data Analytics", title: "Dashboards & insights", points: ["Excel · Power BI · Tableau · Python", "Interactive dashboards", "Insights written in plain words"], note: "Built for startup / custom requirements", Visual: AnalyticsPreview },
-  { cat: "IoT + AI", title: "Sensor + software builds", points: ["Sensor data collection", "Hardware + software link", "Optional AI/ML layer"], note: "Built for student / custom requirements", Visual: IotPreview },
-  { cat: "Web Applications", title: "Sites & web apps", points: ["Responsive frontend", "Backend + database", "Deployed & shareable link"], note: "Built for startup / custom requirements", Visual: WebPreview },
+  {
+    cat: "AI / ML",
+    title: "DocuMind AI — document Q&A",
+    kind: "Demo build",
+    problem: "Long documents are hard to search — finding the right paragraph takes too long.",
+    solution: "An app that reads your documents and answers questions with retrieved passages.",
+    stack: "Python · embeddings · retrieval (RAG) · Streamlit",
+    points: ["Upload PDFs and ask questions", "Retrieved answers with source passages", "Simple demo you can present"],
+    note: "Demonstration build — shows what we can build, not client work.",
+    Visual: MlPreview,
+  },
+  {
+    cat: "Data Analytics",
+    title: "Sales forecasting dashboards",
+    kind: "Demo build",
+    problem: "Raw sales data doesn't show what's coming next or where attention is needed.",
+    solution: "Interactive dashboards with trends, comparisons and plain-words insights.",
+    stack: "Excel · Power BI · Tableau · Python",
+    points: ["Weekly trends and comparisons", "Forecast views for planning", "Insights written in plain words"],
+    note: "Demonstration build — shows what we can build, not client work.",
+    Visual: AnalyticsPreview,
+  },
+  {
+    cat: "IoT + AI",
+    title: "Sensor + software builds",
+    kind: "Demo build",
+    problem: "Sensor readings on their own don't trigger useful action.",
+    solution: "Hardware linked to software with live readings, alerts and an optional AI layer.",
+    stack: "Sensors · microcontroller · Python · alerts",
+    points: ["Live temperature, humidity & motion", "Automatic alerts and actions", "Optional AI/ML layer"],
+    note: "Demonstration build — shows what we can build, not client work.",
+    Visual: IotPreview,
+  },
+  {
+    cat: "Web Applications",
+    title: "Sites & web apps",
+    kind: "Demo build",
+    problem: "Ideas need a fast, working web presence — not a mockup that goes nowhere.",
+    solution: "Responsive sites and web apps with backend, database and a live shareable link.",
+    stack: "React · backend + database · cloud hosting",
+    points: ["Responsive frontend", "Backend + database", "Deployed & shareable link"],
+    note: "Demonstration build — shows what we can build, not client work.",
+    Visual: WebPreview,
+  },
 ];
 
 export default function Projects() {
@@ -133,8 +173,18 @@ export default function Projects() {
                   <span className="rounded-full bg-ink px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.12em] text-ivory dark:bg-honey dark:text-ink">
                     {p.cat}
                   </span>
+                  <span className="rounded-full border border-dashed border-ink/25 px-3 py-1.5 text-[11px] font-semibold text-ink-mute dark:border-white/25 dark:text-night-ink/60">
+                    {p.kind}
+                  </span>
                 </div>
                 <h3 className="mt-3.5 font-display text-[24px] font-medium tracking-tight">{p.title}</h3>
+                <p className="mt-2 text-[14px] leading-relaxed text-ink-soft dark:text-night-ink/65">
+                  <strong className="font-semibold text-ink dark:text-night-ink">Problem:</strong> {p.problem}
+                </p>
+                <p className="mt-1.5 text-[14px] leading-relaxed text-ink-soft dark:text-night-ink/65">
+                  <strong className="font-semibold text-ink dark:text-night-ink">Solution:</strong> {p.solution}
+                </p>
+                <p className="mt-2 font-mono text-[11.5px] text-ink-mute dark:text-night-ink/55">{p.stack}</p>
                 <div className="mt-4">
                   <p.Visual />
                 </div>

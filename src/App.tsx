@@ -1,12 +1,16 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import Hero from "./sections/Hero";
 import Why from "./sections/Why";
 import Services from "./sections/Services";
 import Projects from "./sections/Projects";
 import Process from "./sections/Process";
 import Pricing from "./sections/Pricing";
+import Estimator from "./sections/Estimator";
 import Faq from "./sections/Faq";
+import Assistant from "./sections/Assistant";
+import Enquiry from "./sections/Enquiry";
 import FinalCta from "./sections/FinalCta";
 
 export default function App() {
@@ -20,10 +24,14 @@ export default function App() {
         <Projects />
         <Process />
         <Pricing />
+        <Estimator />
         <Faq />
+        <Assistant />
+        <Enquiry />
         <FinalCta />
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 }

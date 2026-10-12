@@ -140,11 +140,11 @@ export default function Hero() {
             transition={{ duration: 0.65, delay: 0.08, ease: EASE }}
             className="display-xl mt-6"
           >
-            Have an Idea?
+            From Ideas to
             <br />
-            Let&rsquo;s{" "}
+            Real-World{" "}
             <span className="scribble">
-              Build It.
+              Tech Solutions.
               <Scribble />
             </span>
           </motion.h1>
@@ -155,8 +155,8 @@ export default function Hero() {
             transition={{ duration: 0.65, delay: 0.16, ease: EASE }}
             className="lead mt-5 max-w-lg text-ink-soft dark:text-night-ink/70"
           >
-            From AI and data projects to websites, IoT and deployment — VishvaTech helps
-            turn your idea into a working solution.
+            We build websites, AI-powered applications, analytics solutions and
+            custom software to turn your ideas into practical products.
           </motion.p>
 
           <motion.div
@@ -171,14 +171,14 @@ export default function Hero() {
               rel="noreferrer"
               className="group inline-flex min-h-[54px] items-center justify-center gap-2 rounded-full bg-brand px-7 text-[15.5px] font-semibold text-white shadow-[0_16px_36px_-16px_rgba(36,71,255,0.7)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-deep active:translate-y-0"
             >
-              Start Your Project
+              Discuss Your Project
               <ArrowRight size={18} className="transition-transform duration-200 group-hover:translate-x-1" />
             </a>
             <a
-              href="#services"
+              href="#projects"
               className="inline-flex min-h-[54px] items-center justify-center gap-2 rounded-full border border-ink/15 bg-white/70 px-7 text-[15.5px] font-semibold transition-all duration-200 hover:border-ink/30 hover:bg-white dark:border-white/15 dark:bg-white/5 dark:hover:bg-white/10"
             >
-              Explore Services
+              Explore Our Work
               <ArrowDown size={17} />
             </a>
           </motion.div>

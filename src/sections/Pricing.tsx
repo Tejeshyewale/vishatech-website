@@ -108,7 +108,15 @@ export default function Pricing() {
           <p className="mx-auto mt-8 max-w-xl text-center text-[13.5px] leading-relaxed text-ink-soft dark:text-night-ink/65">
             Final pricing depends on project scope, features and complexity.
             <span className="block mt-1 text-ink-mute dark:text-night-ink/55">
-              We confirm everything with you before starting — no surprises.
+              We confirm everything with you before starting — no surprises.{" "}
+              <a href="#estimator" className="font-semibold text-brand-deep underline-offset-4 hover:underline dark:text-honey">
+                Try the cost estimator
+              </a>{" "}
+              or{" "}
+              <a href="#contact" className="font-semibold text-brand-deep underline-offset-4 hover:underline dark:text-honey">
+                send an enquiry
+              </a>
+              .
             </span>
           </p>
         </Reveal>
