@@ -27,12 +27,12 @@ const ROWS = [
 function HeroVisual() {
   const reduce = useReducedMotion();
   return (
-    <div className="relative mx-auto w-full max-w-[460px] pt-8" aria-hidden="true">
+    <div className="relative mx-auto w-full max-w-[460px]" aria-hidden="true">
       {/* main build card */}
       <motion.div
         initial={reduce ? false : { opacity: 0, y: 24 }}
         animate={reduce ? undefined : { opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: EASE }}
+        transition={{ duration: 0.55, ease: EASE }}
         className="card-soft relative overflow-hidden rounded-[28px] p-5 sm:p-6"
       >
         <div className="flex items-center justify-between gap-3">
@@ -52,7 +52,7 @@ function HeroVisual() {
               key={row.label}
               initial={reduce ? false : { opacity: 0, y: 12 }}
               animate={reduce ? undefined : { opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, delay: 0.25 + i * 0.14, ease: EASE }}
+              transition={{ duration: 0.5, delay: 0.2 + i * 0.08, ease: EASE }}
               className="flex items-center gap-3 rounded-2xl border border-ink/[0.07] bg-white px-3.5 py-3 dark:border-white/10 dark:bg-white/[0.04]"
             >
               <span className={`grid h-9 w-9 shrink-0 place-items-center rounded-xl ${row.tint}`}>
@@ -76,49 +76,21 @@ function HeroVisual() {
         </div>
 
         {/* mini code strip */}
-        <div className="mt-4 overflow-x-auto rounded-2xl bg-ink p-4 font-mono text-[11.5px] leading-relaxed text-[#C9D4FF] dark:bg-black/50">
-          <p className="whitespace-nowrap"><span className="text-honey">const</span> solution = <span className="text-white">await</span> build(idea);</p>
-          <p className="whitespace-nowrap"><span className="text-white">deploy</span>(solution, {"{ cloud: "}<span className="text-honey">"live"</span>{" }"})</p>
-          <p className="flex items-center gap-1.5 whitespace-nowrap text-[#7EE2A8]">
+        <div className="mt-4 overflow-x-auto rounded-2xl border border-ink/10 bg-ivory-deep p-4 font-mono text-[11.5px] leading-relaxed text-ink-soft dark:border-white/10 dark:bg-black/50 dark:text-[#C9D4FF]">
+          <p className="whitespace-nowrap"><span className="text-brand-deep dark:text-honey">const</span> solution = <span className="font-semibold text-ink dark:font-normal dark:text-white">await</span> build(idea);</p>
+          <p className="whitespace-nowrap"><span className="font-semibold text-ink dark:font-normal dark:text-white">deploy</span>(solution, {"{ cloud: "}<span className="text-brand-deep dark:text-honey">"live"</span>{" }"})</p>
+          <p className="flex items-center gap-1.5 whitespace-nowrap font-semibold text-[#157A3A] dark:font-normal dark:text-[#7EE2A8]">
             <Check size={12} strokeWidth={3} /> build passed — ready to show
           </p>
         </div>
       </motion.div>
-
-      {/* deploy ticket — static, one-time entrance, no looping motion */}
-      <motion.div
-        initial={reduce ? false : { opacity: 0, y: 12 }}
-        animate={reduce ? undefined : { opacity: 1, y: 0 }}
-        transition={{ delay: 0.7, duration: 0.6, ease: EASE }}
-        className="absolute right-3 top-0 sm:right-2"
-      >
-        <div className="rounded-2xl border border-ink/10 bg-ink px-4 py-2.5 text-ivory shadow-[0_18px_40px_-18px_rgba(20,27,46,0.5)] dark:border-white/10 dark:bg-ivory dark:text-ink">
-          <p className="text-[10.5px] font-bold uppercase tracking-[0.14em] opacity-60">live preview</p>
-          <p className="font-mono text-[12.5px] font-semibold">your-project.live ✓</p>
-        </div>
-      </motion.div>
-
-      {/* quiet margin note */}
-      <motion.p
-        initial={reduce ? false : { opacity: 0 }}
-        animate={reduce ? undefined : { opacity: 1 }}
-        transition={{ delay: 0.9, duration: 0.6 }}
-        className="absolute -bottom-8 left-3 -rotate-2 font-display text-[16px] italic text-ink-mute dark:text-night-ink/55"
-      >
-        from a rough note to this
-      </motion.p>
     </div>
   );
 }
 
 export default function Hero() {
   return (
-    <section id="top" className="paper-grain relative overflow-hidden pt-28 sm:pt-36">
-      {/* very subtle wash, not a neon gradient */}
-      <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-[440px] bg-[radial-gradient(60%_60%_at_50%_0%,rgba(36,71,255,0.09),transparent_70%)] dark:bg-[radial-gradient(60%_60%_at_50%_0%,rgba(108,140,255,0.12),transparent_70%)]"
-        aria-hidden="true"
-      />
+    <section id="top" className="relative overflow-hidden pt-28 sm:pt-36">
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 sm:px-8 lg:grid-cols-[1.02fr_0.98fr] lg:gap-10 lg:pb-24">
         <div className="max-w-xl">
           <motion.div
@@ -155,8 +127,8 @@ export default function Hero() {
             transition={{ duration: 0.65, delay: 0.16, ease: EASE }}
             className="lead mt-5 max-w-lg text-ink-soft dark:text-night-ink/70"
           >
-            We build websites, AI-powered applications, analytics solutions and
-            custom software to turn your ideas into practical products.
+            We build thoughtful digital products, AI solutions and custom software
+            that turn ideas into practical results.
           </motion.p>
 
           <motion.div
@@ -169,7 +141,7 @@ export default function Hero() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex min-h-[54px] items-center justify-center gap-2 rounded-full bg-brand px-7 text-[15.5px] font-semibold text-white shadow-[0_16px_36px_-16px_rgba(36,71,255,0.7)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-deep active:translate-y-0"
+              className="group inline-flex min-h-[54px] items-center justify-center gap-2 rounded-full bg-brand px-7 text-[15.5px] font-semibold text-white shadow-[0_10px_24px_-14px_rgba(70,99,217,0.6)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-deep active:translate-y-0"
             >
               Discuss Your Project
               <ArrowRight size={18} className="transition-transform duration-200 group-hover:translate-x-1" />

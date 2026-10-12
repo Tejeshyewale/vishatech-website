@@ -74,7 +74,7 @@ export default function Assistant() {
             </div>
 
             {done && service && stageTip && (
-              <div className="mt-7 rounded-2xl bg-ink p-6 text-ivory dark:bg-ivory dark:text-ink" aria-live="polite">
+              <div className="mt-7 rounded-2xl border border-brand/20 bg-lav p-6 text-ink dark:border-white/10 dark:bg-ivory dark:text-ink" aria-live="polite">
                 <p className="text-[12px] font-bold uppercase tracking-[0.16em] opacity-65">
                   Suggested service
                 </p>
@@ -87,13 +87,13 @@ export default function Assistant() {
                     )}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex min-h-[50px] flex-1 items-center justify-center gap-2 rounded-full bg-ivory px-6 text-[14.5px] font-semibold text-ink transition-colors hover:bg-honey dark:bg-ink dark:text-ivory dark:hover:bg-brand dark:hover:text-white"
+                    className="inline-flex min-h-[50px] flex-1 items-center justify-center gap-2 rounded-full bg-ink px-6 text-[14.5px] font-semibold text-ivory transition-colors hover:bg-brand-deep dark:bg-ink dark:text-ivory dark:hover:bg-brand dark:hover:text-white"
                   >
                     Ask about {service} <ArrowRight size={16} />
                   </a>
                   <a
                     href="#contact"
-                    className="inline-flex min-h-[50px] flex-1 items-center justify-center gap-2 rounded-full border border-white/25 px-6 text-[14.5px] font-semibold transition-colors hover:bg-white/10 dark:border-ink/20"
+                    className="inline-flex min-h-[50px] flex-1 items-center justify-center gap-2 rounded-full border border-ink/20 px-6 text-[14.5px] font-semibold transition-colors hover:border-ink/40 dark:border-ink/20"
                   >
                     Use the enquiry form
                   </a>

@@ -100,12 +100,10 @@ export default function Services() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label={`${s.name} — discuss this service on WhatsApp`}
-                className={`card-soft group relative flex h-full flex-col rounded-3xl p-6 transition-all duration-200 hover:-translate-y-1 hover:border-brand/30 hover:shadow-[0_20px_44px_-24px_rgba(20,27,46,0.35)] sm:p-6 ${
-                  s.featured ? "bg-gradient-to-b from-white to-lav/60 dark:from-night-card dark:to-brand/[0.08]" : ""
-                }`}
+                className="card-soft group relative flex h-full flex-col rounded-3xl p-6 transition-all duration-200 hover:-translate-y-[3px] hover:border-brand/40 hover:shadow-[0_12px_28px_-20px_rgba(32,38,51,0.35)] sm:p-6"
               >
-                <span className="grid h-11 w-11 place-items-center rounded-2xl bg-ink text-ivory transition-colors duration-200 group-hover:bg-brand group-hover:text-white dark:bg-ivory dark:text-ink dark:group-hover:bg-honey">
-                  <s.icon size={20} strokeWidth={1.9} />
+                <span className="grid h-10 w-10 place-items-center rounded-xl bg-lav text-brand-deep dark:bg-white/10 dark:text-honey">
+                  <s.icon size={19} strokeWidth={1.9} />
                 </span>
                 <h3 className="mt-4 text-[18px] font-bold tracking-tight">{s.name}</h3>
                 <p className="mt-1.5 max-w-[38ch] text-[14px] leading-relaxed text-ink-soft dark:text-night-ink/65">

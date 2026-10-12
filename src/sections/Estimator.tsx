@@ -112,7 +112,7 @@ export default function Estimator() {
                   id="est-category"
                   value={category}
                   onChange={(e) => setCategory(e.target.value)}
-                  className="mt-2.5 w-full rounded-2xl border border-ink/15 bg-white/80 px-4 py-3.5 text-[15px] font-medium dark:border-white/15 dark:bg-white/5"
+                  className="mt-2.5 w-full rounded-2xl border border-ink/15 bg-ivory px-4 py-3.5 text-[15px] font-medium dark:border-white/15 dark:bg-white/5"
                 >
                   {CATEGORIES.map((c) => (
                     <option key={c} value={c}>
@@ -159,7 +159,7 @@ export default function Estimator() {
             </div>
 
             <div
-              className="mt-8 rounded-2xl bg-ink p-6 text-ivory sm:p-7 dark:bg-ivory dark:text-ink"
+              className="mt-8 rounded-2xl border border-brand/20 bg-lav p-6 text-ink sm:p-7 dark:border-white/10 dark:bg-ivory dark:text-ink"
               aria-live="polite"
             >
               <p className="flex items-center gap-2 text-[12px] font-bold uppercase tracking-[0.16em] opacity-65">
@@ -182,7 +182,7 @@ export default function Estimator() {
                 href={whatsappLink(message)}
                 target="_blank"
                 rel="noreferrer"
-                className="group mt-5 inline-flex min-h-[52px] items-center justify-center gap-2 rounded-full bg-ivory px-7 text-[15px] font-semibold text-ink transition-colors duration-200 hover:bg-honey dark:bg-ink dark:text-ivory dark:hover:bg-brand dark:hover:text-white"
+                className="group mt-5 inline-flex min-h-[52px] items-center justify-center gap-2 rounded-full bg-ink px-7 text-[15px] font-semibold text-ivory transition-colors duration-200 hover:bg-brand-deep dark:bg-ink dark:text-ivory dark:hover:bg-brand dark:hover:text-white"
               >
                 Get this estimate on WhatsApp
                 <ArrowUpRight size={17} className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

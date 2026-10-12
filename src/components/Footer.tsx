@@ -15,7 +15,7 @@ const SERVICE_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-ink/10 dark:border-white/10">
+    <footer className="border-t border-ink/10 bg-ivory-deep/50 dark:border-white/10 dark:bg-white/[0.02]">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.2fr_0.8fr_1fr]">
         <div>
           <a href="#top" aria-label="VishvaTech home">

@@ -50,14 +50,14 @@ export default function Pricing() {
           {PLANS.map((p, i) => (
             <Reveal key={p.tag} delay={i * 100}>
               <article
-                className={`relative flex h-full flex-col rounded-[28px] p-7 transition-all duration-200 hover:-translate-y-1.5 sm:p-9 ${
+                className={`relative flex h-full flex-col rounded-[28px] border p-7 transition-all duration-200 hover:-translate-y-[3px] sm:p-9 ${
                   p.highlight
-                    ? "bg-ink text-ivory shadow-[0_30px_60px_-30px_rgba(20,27,46,0.55)] dark:bg-ivory dark:text-ink"
-                    : "card-soft"
+                    ? "border-brand/50 bg-white shadow-[0_16px_36px_-24px_rgba(70,99,217,0.4)] dark:border-honey/40 dark:bg-night-card"
+                    : "card-soft hover:border-brand/40"
                 }`}
               >
                 {p.highlight && (
-                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-honey px-4 py-1.5 text-[11.5px] font-bold uppercase tracking-[0.1em] text-ink">
+                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-brand px-4 py-1.5 text-[11.5px] font-bold uppercase tracking-[0.1em] text-white dark:bg-honey dark:text-ink">
                     Most common
                   </span>
                 )}
@@ -92,7 +92,7 @@ export default function Pricing() {
                   rel="noreferrer"
                   className={`group mt-8 inline-flex min-h-[52px] items-center justify-center gap-2 rounded-full px-6 text-[15px] font-semibold transition-all duration-200 ${
                     p.highlight
-                      ? "bg-ivory text-ink hover:bg-honey dark:bg-ink dark:text-ivory dark:hover:bg-brand dark:hover:text-white"
+                      ? "bg-ink text-ivory hover:bg-brand-deep dark:bg-ivory dark:text-ink dark:hover:bg-honey dark:hover:text-ink"
                       : "bg-brand text-white hover:bg-brand-deep"
                   }`}
                 >

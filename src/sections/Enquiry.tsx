@@ -30,7 +30,7 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 const PHONE_RE = /^[+\d][\d\s-]{6,17}$/;
 
 const inputClass =
-  "mt-2 w-full rounded-2xl border border-ink/15 bg-white/80 px-4 py-3.5 text-[15px] dark:border-white/15 dark:bg-white/5";
+  "mt-2 w-full rounded-2xl border border-ink/15 bg-ivory px-4 py-3.5 text-[15px] dark:border-white/15 dark:bg-white/5";
 const labelClass =
   "text-[13px] font-bold uppercase tracking-[0.12em] text-ink-mute dark:text-night-ink/55";
 const errorClass = "mt-1.5 text-[13px] font-medium text-red-600 dark:text-red-400";

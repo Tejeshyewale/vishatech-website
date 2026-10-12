@@ -23,7 +23,7 @@ export default function Why() {
             <Reveal as="li" key={c.n} delay={i * 90}>
               <article className="card-soft group h-full rounded-3xl p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_20px_44px_-24px_rgba(20,27,46,0.35)]">
                 <div className="flex items-start justify-between">
-                  <span className="grid h-11 w-11 place-items-center rounded-2xl bg-lav text-brand-deep transition-colors duration-200 group-hover:bg-brand group-hover:text-white dark:bg-white/10 dark:text-white">
+                  <span className="grid h-10 w-10 place-items-center rounded-xl bg-lav text-brand-deep dark:bg-white/10 dark:text-honey">
                     <c.icon size={19} />
                   </span>
                   <span className="font-display text-[15px] italic text-ink-mute dark:text-night-ink/45">

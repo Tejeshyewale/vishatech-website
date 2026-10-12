@@ -57,10 +57,10 @@ export default function Navbar() {
       <header className="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-6 sm:pt-4">
         <nav
           aria-label="Primary"
-          className={`mx-auto flex max-w-6xl items-center justify-between gap-3 rounded-2xl border px-3 py-2.5 pl-4 transition-all duration-300 sm:px-4 ${
+          className={`mx-auto flex max-w-6xl items-center justify-between gap-3 rounded-2xl border px-3 py-2.5 pl-4 transition-colors duration-200 sm:px-4 ${
             scrolled
-              ? "border-ink/10 bg-ivory/80 shadow-[0_12px_36px_-20px_rgba(20,27,46,0.35)] backdrop-blur-xl dark:border-white/10 dark:bg-night/75"
-              : "border-ink/10 bg-ivory/60 backdrop-blur-md dark:border-white/10 dark:bg-night/50"
+              ? "border-ink/10 bg-ivory/95 shadow-[0_8px_24px_-16px_rgba(32,38,51,0.25)] dark:border-white/10 dark:bg-night/90"
+              : "border-transparent bg-transparent dark:border-transparent"
           }`}
         >
           <a href="#top" aria-label="VishvaTech home">
@@ -118,17 +118,17 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.22 }}
-            className="fixed inset-0 z-40 bg-ink/25 backdrop-blur-sm lg:hidden dark:bg-black/55"
+            className="fixed inset-0 z-40 bg-ink/20 lg:hidden dark:bg-black/50"
             onClick={() => setOpen(false)}
           >
             <motion.nav
               aria-label="Mobile"
-              initial={{ y: -14, opacity: 0, scale: 0.99 }}
-              animate={{ y: 0, opacity: 1, scale: 1 }}
-              exit={{ y: -10, opacity: 0, scale: 0.99 }}
-              transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+              initial={{ y: -8, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -8, opacity: 0 }}
+              transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
               onClick={(e) => e.stopPropagation()}
-              className="mx-3 mt-[76px] rounded-3xl border border-ink/10 bg-ivory p-3 shadow-2xl sm:mx-6 dark:border-white/10 dark:bg-night-card"
+              className="mx-3 mt-[76px] max-h-[calc(100dvh-100px)] overflow-y-auto rounded-3xl border border-ink/10 bg-ivory p-3 shadow-[0_16px_40px_-24px_rgba(32,38,51,0.3)] sm:mx-6 dark:border-white/10 dark:bg-night-card"
             >
               <ul className="flex flex-col">
                 {NAV_LINKS.map((l, i) => (

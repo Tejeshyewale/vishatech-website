@@ -168,9 +168,9 @@ export default function Projects() {
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           {PROJECTS.map((p, i) => (
             <Reveal key={p.title} delay={Math.min(i * 80, 240)}>
-              <article className="card-soft group flex h-full flex-col overflow-hidden rounded-3xl p-5 transition-all duration-200 hover:-translate-y-1 hover:border-brand/30 hover:shadow-[0_20px_44px_-24px_rgba(20,27,46,0.35)] sm:p-6">
+              <article className="card-soft group flex h-full flex-col overflow-hidden rounded-3xl p-5 transition-all duration-200 hover:-translate-y-[3px] hover:border-brand/40 hover:shadow-[0_12px_28px_-20px_rgba(32,38,51,0.3)] sm:p-6">
                 <div className="flex items-center justify-between gap-3">
-                  <span className="rounded-full bg-ink px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.12em] text-ivory dark:bg-honey dark:text-ink">
+                  <span className="rounded-full border border-ink/15 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.12em] text-ink-soft dark:border-white/20 dark:text-night-ink/80">
                     {p.cat}
                   </span>
                   <span className="rounded-full border border-dashed border-ink/25 px-3 py-1.5 text-[11px] font-semibold text-ink-mute dark:border-white/25 dark:text-night-ink/60">
@@ -205,7 +205,7 @@ export default function Projects() {
         </div>
 
         <Reveal delay={120}>
-          <div className="mt-5 flex flex-col items-start justify-between gap-4 rounded-3xl bg-ink p-6 text-ivory sm:flex-row sm:items-center sm:p-7 dark:bg-ivory dark:text-ink">
+          <div className="mt-5 flex flex-col items-start justify-between gap-4 rounded-3xl border border-ink/10 bg-white p-6 text-ink sm:flex-row sm:items-center sm:p-7 dark:border-white/10 dark:bg-ivory dark:text-ink">
             <div>
               <p className="font-display text-[22px] italic leading-snug">Have something similar in mind?</p>
               <p className="mt-1 text-[14px] opacity-70">Send a 2-line note about your idea — we&rsquo;ll take it from there.</p>
@@ -214,7 +214,7 @@ export default function Projects() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex min-h-[50px] shrink-0 items-center gap-2 rounded-full bg-ivory px-6 text-[15px] font-semibold text-ink transition-colors duration-200 hover:bg-honey dark:bg-ink dark:text-ivory dark:hover:bg-brand dark:hover:text-white"
+              className="group inline-flex min-h-[50px] shrink-0 items-center gap-2 rounded-full bg-ink px-6 text-[15px] font-semibold text-ivory transition-colors duration-200 hover:bg-brand-deep dark:bg-ink dark:text-ivory dark:hover:bg-brand dark:hover:text-white"
             >
               Let&rsquo;s discuss it
               <ArrowRight size={17} className="transition-transform duration-200 group-hover:translate-x-1" />
