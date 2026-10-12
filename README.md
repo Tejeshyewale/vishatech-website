@@ -23,7 +23,7 @@ npm run build
 
 A modern technology studio website built for **VishvaTech** — focused on AI/ML, web development, data analytics, IoT, blockchain, software projects, and cloud deployment.
 
-[![Live Website](https://img.shields.io/badge/Live%20Website-vishatech.vercel.app-2563EB?style=for-the-badge\&logo=vercel\&logoColor=white)](https://vishatech.vercel.app/)
+[![Live Website](https://img.shields.io/badge/Live%20Website-vishatech--website.vercel.app-2563EB?style=for-the-badge&logo=vercel&logoColor=white)](https://vishatech-website.vercel.app/)
 [![Built with React](https://img.shields.io/badge/React-TypeScript-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-7C3AED?style=for-the-badge\&logo=vite\&logoColor=white)](https://vite.dev/)
 [![License](https://img.shields.io/badge/License-Private-111827?style=for-the-badge)](#)
@@ -182,7 +182,7 @@ For individual requirements such as development, analytics, model building, depl
 ## 🌐 Live
 
 **Website:**
-https://vishatech.vercel.app/
+https://vishatech-website.vercel.app/
 
 **GitHub:**
 https://github.com/Tejeshyewale/vishatech-website
@@ -239,7 +239,7 @@ npm run build
 
 Live deployment:
 
-**https://vishatech.vercel.app/**
+**https://vishatech-website.vercel.app/**
 
 ---
 
