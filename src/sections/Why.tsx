@@ -14,7 +14,7 @@ export default function Why() {
     <section id="why" className="scroll-mt-24">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
         <SectionHeading
-          eyebrow="Why VishaTech"
+          eyebrow="Why VishvaTech"
           title="Not just a project. A working solution."
           copy="We work with you from idea to development and deployment — keeping things practical, clear and focused on what you actually need."
         />

@@ -4,7 +4,7 @@ type SymbolProps = {
 };
 
 /**
- * VishaTech symbol — "the drop-in V".
+ * VishvaTech symbol — "the drop-in V".
  * A geometric V (technology / structure) holding an electric-blue node
  * (the idea) in its cradle: Idea → Tech → Solution.
  * Flat, two inks + one accent. Theme-aware via Tailwind fill/stroke tokens.
@@ -64,7 +64,7 @@ export default function Logo({
         <span
           className={`block font-extrabold tracking-[-0.035em] ${wordmarkClass}`}
         >
-          VishaTech
+          VishvaTech
         </span>
         {tagline && (
           <span

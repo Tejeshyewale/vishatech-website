@@ -1,7 +1,7 @@
-export const WHATSAPP_NUMBER = "+91 82375 74725";
+export const WHATSAPP_NUMBER = "+91 86238 13105";
 export const WHATSAPP_LINK =
-  "https://wa.me/918237574725?text=" +
-  encodeURIComponent("Hi VishaTech, I’d like to discuss a project/service.");
+  "https://wa.me/918623813105?text=" +
+  encodeURIComponent("Hi VishvaTech, I’d like to discuss a project/service.");
 export const INSTAGRAM_HANDLE = "@vishva_the_creator";
 export const INSTAGRAM_URL = "https://www.instagram.com/vishva_the_creator/";
 

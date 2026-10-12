@@ -63,7 +63,7 @@ export default function Navbar() {
               : "border-ink/10 bg-ivory/60 backdrop-blur-md dark:border-white/10 dark:bg-night/50"
           }`}
         >
-          <a href="#top" aria-label="VishaTech home">
+          <a href="#top" aria-label="VishvaTech home">
             <Logo />
           </a>
 

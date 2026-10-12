@@ -42,7 +42,7 @@ function HeroVisual() {
             <span className="dot bg-[#28C840]" />
           </div>
           <span className="truncate rounded-full bg-lav px-3 py-1 text-[11px] font-semibold text-brand-deep dark:bg-white/10 dark:text-night-ink">
-            vishatech — project board
+            VishvaTech — project board
           </span>
         </div>
 
@@ -128,7 +128,7 @@ export default function Hero() {
           >
             <p className="inline-flex max-w-full flex-wrap items-center gap-x-2 gap-y-1.5 rounded-2xl border border-ink/10 bg-white/80 px-3 py-2 text-[12.5px] font-medium text-ink-soft sm:rounded-full sm:py-1.5 sm:pl-2 sm:pr-4 sm:text-[13px] dark:border-white/10 dark:bg-white/5 dark:text-night-ink/80">
               <span className="rounded-full bg-ink px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-ivory dark:bg-honey dark:text-ink">
-                VishaTech
+                VishvaTech
               </span>
               <span>Your Idea → Our Tech → Real Solution</span>
             </p>
@@ -155,7 +155,7 @@ export default function Hero() {
             transition={{ duration: 0.65, delay: 0.16, ease: EASE }}
             className="lead mt-5 max-w-lg text-ink-soft dark:text-night-ink/70"
           >
-            From AI and data projects to websites, IoT and deployment — VishaTech helps
+            From AI and data projects to websites, IoT and deployment — VishvaTech helps
             turn your idea into a working solution.
           </motion.p>
 

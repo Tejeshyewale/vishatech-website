@@ -18,7 +18,7 @@ export default function Footer() {
     <footer className="border-t border-ink/10 dark:border-white/10">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.2fr_0.8fr_1fr]">
         <div>
-          <a href="#top" aria-label="VishaTech home">
+          <a href="#top" aria-label="VishvaTech home">
             <Logo tagline={false} wordmarkClass="text-[17px]" />
           </a>
           <p className="mt-4 font-display text-[19px] italic text-ink-soft dark:text-night-ink/70">
@@ -85,7 +85,7 @@ export default function Footer() {
 
       <div className="border-t border-ink/10 dark:border-white/10">
         <div className="mx-auto flex max-w-6xl flex-col gap-1 px-5 py-5 text-[13px] text-ink-mute sm:flex-row sm:items-center sm:justify-between sm:px-8 dark:text-night-ink/50">
-          <p>© 2026 VishaTech. All rights reserved.</p>
+          <p>© 2026 VishvaTech. All rights reserved.</p>
           <p>Made with care — one project at a time.</p>
         </div>
       </div>
